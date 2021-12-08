@@ -18,3 +18,5 @@
 - [ ] using different http methods for requesting
 - [ ] dockerizing the project
 - [ ] maybe deploying it
+- [ ] web scraping
+- [ ] building some useful api
