@@ -5,4 +5,5 @@ urlpatterns = [
     path("", views.dashboard, name="dashboard"),
     path("charts/", views.charts, name="charts"),
     path("tables/", views.tables, name="tables"),
+    path("upload/csv/", views.uploadCSV, name="uploadCSV"),
 ]

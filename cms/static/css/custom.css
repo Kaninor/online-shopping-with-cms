@@ -1,3 +1,12 @@
-/* body {
-    background-color: black;
-} */
+.mybtn {
+    border-bottom-right-radius: .25rem; 
+    border-top-right-radius: .25rem; 
+    display: inline-block; width: 60px; 
+    border: 1px solid transparent; 
+    padding-bottom: 5px;
+}
+
+.myinput-file {
+    border-bottom-right-radius: 0rem; 
+    border-top-right-radius: 0;
+}
