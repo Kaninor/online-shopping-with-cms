@@ -1,0 +1,17 @@
+- [ ] authentication
+- [ ] displaying charts with data in database
+- [ ] filling table with data in database
+- [ ] log in required pages
+- [ ] filling cards in dashboard with data
+- [ ] filling charts footer with better text
+- [ ] more components
+- [ ] activating the current tab
+- [ ] add, edit and delete
+- [ ] able to upload csv files, parsing it into database and append the data into the table
+- [ ] more cookies and sessions
+- [ ] settings view for admin
+- [ ] adding an new app to the project for online shopping
+- [ ] connecting the cms to the shop
+- [ ] online payloads
+- [ ] requests limit for avoiding brute force
+- [ ] using jquery instead of pure js
