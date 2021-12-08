@@ -20,3 +20,4 @@
 - [ ] maybe deploying it
 - [ ] web scraping
 - [ ] building some useful api
+- [ ] migrate to mysql
