@@ -17,4 +17,7 @@
 - [ ] using jquery instead of pure js
 - [ ] using different http methods for requesting
 - [ ] dockerizing the project
+<<<<<<< HEAD
 - [ ] maybe deploying it
+=======
+>>>>>>> bff015acb98effc880ca6ddd1e9e57f81e1f2fdc
