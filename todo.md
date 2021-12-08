@@ -15,3 +15,5 @@
 - [ ] online payloads
 - [ ] requests limit for avoiding brute force
 - [ ] using jquery instead of pure js
+- [ ] using different http methods for requesting
+- [ ] dockerizing the project
