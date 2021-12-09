@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="/static/css/styles.css?{% now 'U' %}" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     {% block head %}{% endblock %}
 </head>
 <body class="sb-nav-fixed">
@@ -24,6 +25,8 @@
             {% include 'components/footer.html'   %}
         </div>
     </div>
+
+    <script src="/static/js/authBtnAction.js?{% now 'U' %}"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>

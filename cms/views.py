@@ -19,3 +19,9 @@ def uploadCSV(request):
     if request.method == "POST":
         csv_file = request.POST['csvFile'] if request.POST['csvFile'] else None
         return redirect("/cms") if csv_file == None else HttpResponse(csv_file)
+
+def signup(request):
+    return render(request, "register.html")
+
+def login(request):
+    return render(request, "login.html")

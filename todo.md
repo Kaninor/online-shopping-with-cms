@@ -15,9 +15,10 @@
 - [ ] online payloads
 - [ ] requests limit for avoiding brute force
 - [ ] using jquery instead of pure js
-- [ ] using different http methods for requesting
+- [x] using different http methods for requesting
 - [ ] dockerizing the project
 - [ ] maybe deploying it
 - [ ] web scraping
 - [ ] building some useful api
-- [ ] migrate to mysql
+- [ ] migrate to mysql or postgresql
+- [ ] adding a venv folder
