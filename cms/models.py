@@ -11,3 +11,13 @@ class CMSUser(models.Model):
 
     def __repr__(self):
         return f"{self.firstName} {self.lastName}"
+
+class Product(models.Model):
+    name = models.CharField(max_length=30)
+    number = models.BigIntegerField()
+    off = models.FloatField()
+    added_in = models.DateTimeField(auto_now_add=True)
+    price = models.FloatField()
+
+    def __repr__(self):
+        return self.name

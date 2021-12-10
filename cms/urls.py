@@ -8,4 +8,5 @@ urlpatterns = [
     path("upload/csv/", views.uploadCSV, name="uploadCSV"),
     path("login/", views.login, name="login"),
     path("signup/", views.signup, name="signup"),
+    path("forgotpassword/", views.forgotPassword, name="forgotPassword"),
 ]

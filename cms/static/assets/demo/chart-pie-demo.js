@@ -7,9 +7,9 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ["Blue", "Red", "Yellow", "Green"],
+    labels: ["T-shirt", "Sneakers", "Socks", "Watch"],
     datasets: [{
-      data: [12.21, 15.58, 11.25, 8.32],
+      data: [4000, 5000, 3000, 1200],
       backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],
     }],
   },

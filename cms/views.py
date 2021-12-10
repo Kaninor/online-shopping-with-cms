@@ -6,13 +6,13 @@ from .models import CMSUser
 from . import queries
 
 def dashboard(request):
-    return render(request, "index.html", {"user": queries.get_user(1)})
+    return render(request, "index.html", {"user": queries.get_user(1), "products": queries.get_products()})
 
 def charts(request):
     return render(request, "charts.html", {"user": queries.get_user(1)})
 
 def tables(request):
-    return render(request, "tables.html", {"user": queries.get_user(1)})
+    return render(request, "tables.html", {"user": queries.get_user(1), "products": queries.get_products()})
 
 @csrf_exempt
 def uploadCSV(request):
@@ -25,3 +25,6 @@ def signup(request):
 
 def login(request):
     return render(request, "login.html")
+
+def forgotPassword(request):
+    return render(request, "password.html")
