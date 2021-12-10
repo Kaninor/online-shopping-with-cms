@@ -2,7 +2,7 @@
 - [ ] displaying charts with data in database
 - [ ] filling table with data in database
 - [ ] log in required pages
-- [ ] filling cards in dashboard with data
+- [x] filling cards in dashboard with data
 - [ ] filling charts footer with better text
 - [ ] more components
 - [ ] activating the current tab

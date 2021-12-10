@@ -4,6 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from .models import CMSUser
 from . import queries
+import pandas as pd
 
 def dashboard(request):
     return render(request, "index.html", {"user": queries.get_user(1), "products": queries.get_products()})
@@ -17,8 +18,14 @@ def tables(request):
 @csrf_exempt
 def uploadCSV(request):
     if request.method == "POST":
-        csv_file = request.POST['csvFile'] if request.POST['csvFile'] else None
-        return redirect("/cms") if csv_file == None else HttpResponse(csv_file)
+        csv_file = request.POST['csvFile']
+        return HttpResponse(csv_file)
+
+@csrf_exempt
+def uploadPUB(request):
+    if request.method == "POST":
+        pub_file = request.POST['pubFile']
+        return HttpResponse(pub_file)
 
 def signup(request):
     return render(request, "register.html")
