@@ -1,19 +1,25 @@
 <!-- table -->
 <div class="card mb-4">
     <div class="card-header">
-        <i class="fas fa-cart-plus"></i>
-        Products DataTable
+        <ul class="nav d-flex justify-content-between">
+            <li>
+                <i class="fas fa-cart-plus"></i>
+                Products DataTable
+            </li>
+            <li>
+                <i class="fas fa-trash pointer" title="delete item"></i>
+            </li>
+        </ul>
     </div>
     <div class="card-body">
-        <table id="datatablesSimple">
-            <thead>
+        <table id="datatablesSimple" class="mytable">
+            <thead class="mythead">
                 <tr>
                     <th>Name</th>
                     <th>Number</th>
                     <th>Off</th>
                     <th>Added in</th>
                     <th>Price</th>
-                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,10 +30,6 @@
                         <td>{{ p.off }}%</td>
                         <td>{{ p.added_in }}</td>
                         <td>${{ p.price }}</td>
-                        <td>
-                            <button class="btn btn-warning shadow-none" style="height: 35px; width: 55px; padding-top: 4px;">edit</button>
-                            <button class="btn btn-danger shadow-none" style="height: 35px; width: 70px; padding-top: 3px;">delete</button>
-                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
