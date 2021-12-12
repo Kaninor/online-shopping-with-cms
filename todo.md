@@ -21,4 +21,4 @@
 - [ ] web scraping
 - [ ] building some useful api
 - [ ] migrate to mysql or postgresql
-- [ ] adding a venv folder
+- [x] adding a venv folder
