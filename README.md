@@ -5,3 +5,4 @@
 ### It has a good feature for adding many products and it is uploading csv file in cms.
 ### It has another feature for advertising that you should upload a .pub file for that in cms.
 ### It has charts for statistics.
+### It has a nice table for products and you can add, edit, delete products in admin view.
