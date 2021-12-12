@@ -17,6 +17,7 @@
         <table id="datatablesSimple" class="mytable">
             <thead class="mythead">
                 <tr>
+                    <th>#</th>
                     <th>Name</th>
                     <th>Number</th>
                     <th>Off</th>
@@ -27,7 +28,8 @@
             <tbody>
                 {% for p in products %}
                     <tr>
-                        <td>{{ p.name}}</td>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ p.name }}</td>
                         <td>{{ p.number }}</td>
                         <td>{{ p.off }}%</td>
                         <td>{{ p.added_in }}</td>
