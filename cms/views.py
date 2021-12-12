@@ -4,7 +4,6 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from .models import CMSUser
 from . import queries
-import pandas as pd
 
 def dashboard(request):
     return render(request, "index.html", {
