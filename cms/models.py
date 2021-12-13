@@ -13,7 +13,7 @@ class CMSUser(models.Model):
         return f"{self.firstName} {self.lastName}"
 
 class Product(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30, unique=True)
     number = models.BigIntegerField()
     off = models.FloatField()
     added_in = models.DateTimeField(auto_now_add=True)
