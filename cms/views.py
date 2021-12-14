@@ -27,7 +27,7 @@ def tables(request):
 def uploadCSV(request):
     if request.method == "POST":
         raw_csv_file = request.POST['csvFile']
-        csv_file = pd.read_csv(raw_csv_file)
+        csv_file = pd.read_csv(raw_csv_file) if request.POST['csvFile'] else None
         
         if raw_csv_file == "append.csv":
             try:
@@ -45,8 +45,8 @@ def uploadCSV(request):
 
         elif raw_csv_file == "delete.csv":
             try:
-                for j in range(len(csv_file)):
-                    Product.objects.get(id=csv_file["ids"][j]).delete()
+                for i in range(len(csv_file)):
+                    Product.objects.get(id=csv_file["ids"][i]).delete()
                 return redirect("/")
             except Exception as e:
                 return HttpResponse(e)
