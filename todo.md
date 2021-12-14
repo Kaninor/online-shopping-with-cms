@@ -1,20 +1,20 @@
 - [ ] authentication
 - [ ] displaying charts with data in database
-- [ ] filling table with data in database
+- [x] filling table with data in database
 - [ ] log in required pages
 - [x] filling cards in dashboard with data
 - [ ] filling charts footer with better text
-- [ ] more components
+- [x] more components
 - [ ] activating the current tab
-- [ ] add, edit and delete
-- [ ] able to upload csv files, parsing it into database and append the data into the table
+- [x] add, edit and delete
+- [x] able to upload csv files, parsing it into database and append the data into the table
 - [ ] more cookies and sessions
 - [ ] settings view for admin
 - [ ] adding an new app to the project for online shopping
 - [ ] connecting the cms to the shop
-- [ ] online payloads
+- [ ] online payloads(optional)
 - [ ] requests limit for avoiding brute force
-- [ ] using jquery instead of pure js
+- [x] using jquery instead of pure js
 - [x] using different http methods for requesting
 - [ ] dockerizing the project
 - [ ] maybe deploying it
