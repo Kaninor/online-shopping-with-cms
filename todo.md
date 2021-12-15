@@ -8,8 +8,9 @@
 - [ ] activating the current tab
 - [x] add, edit and delete
 - [x] able to upload csv files, parsing it into database and append the data into the table
+- [ ] able to upload .pub files and store it into database
 - [ ] more cookies and sessions
-- [ ] settings view for admin
+- [ ] settings view for cms admins
 - [ ] adding an new app to the project for online shopping
 - [ ] connecting the cms to the shop
 - [ ] online payloads(optional)
