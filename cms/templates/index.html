@@ -50,7 +50,7 @@
                 <div class="col-xl-6">
                     <div class="mb-3">
                         <label for="formFile" class="form-label">upload a .pub file for advertisement</label>
-                        <form class="form d-flex" method="POST" action="/cms/upload/pub/">
+                        <form class="form d-flex" method="POST" action="/cms/upload/pub/" enctype="multipart/form-data">
                             <input class="form-control myinput-file shadow-none" type="file" id="formFile" accept=".pub" name="pubFile"/>
                             <button class=" btn-primary mybtn shadow-none" type="submit" title="upload">
                                 <i class='fas fa-upload'></i>
@@ -61,7 +61,7 @@
                 <div class="col-xl-6">
                     <div class="mb-3">
                         <label for="formFile" class="form-label">upload a .csv file for the table (append.csv, delete.csv)</label>
-                        <form class="form d-flex" method="post" action="/cms/upload/csv/">
+                        <form class="form d-flex" method="post" action="/cms/upload/csv/" enctype="multipart/form-data">
                             <input class="form-control myinput-file shadow-none" type="file" id="formFile" accept=".csv" name="csvFile"/>
                             <button class=" btn-primary mybtn shadow-none" type="submit" title="upload">
                                 <i class='fas fa-upload'></i>

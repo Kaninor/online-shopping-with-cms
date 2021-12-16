@@ -2,7 +2,8 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
-from .models import Product
+from django.core.files.storage import FileSystemStorage
+from .models import Product, PubFile
 from . import queries
 import pandas as pd
 
@@ -26,10 +27,13 @@ def tables(request):
 @csrf_exempt
 def uploadCSV(request):
     if request.method == "POST":
-        raw_csv_file = request.POST['csvFile']
-        csv_file = pd.read_csv(raw_csv_file) if request.POST['csvFile'] else None
+        try:
+            raw_csv_file = request.FILES['csvFile']
+            csv_file = pd.read_csv(raw_csv_file)
+        except Exception as e:
+            return redirect("/")
         
-        if raw_csv_file == "append.csv":
+        if raw_csv_file.name == "append.csv":
             try:
                 for i in range(len(csv_file)):
                     p = Product(
@@ -43,7 +47,7 @@ def uploadCSV(request):
             except Exception as e:
                 return HttpResponse(e)
 
-        elif raw_csv_file == "delete.csv":
+        elif raw_csv_file.name == "delete.csv":
             try:
                 for i in range(len(csv_file)):
                     Product.objects.get(id=csv_file["ids"][i]).delete()
@@ -57,8 +61,17 @@ def uploadCSV(request):
 @csrf_exempt
 def uploadPUB(request):
     if request.method == "POST":
-        pub_file = request.POST['pubFile']
-        return HttpResponse(pub_file)
+        try:
+            pub_file = request.FILES['pubFile']
+            p = PubFile(
+                name=pub_file.name,
+                category="test",
+                file=pub_file
+            )
+            p.save()
+            return redirect("/")
+        except Exception as e:
+            return HttpResponse(e)
 
 def signup(request):
     return render(request, "register.html")

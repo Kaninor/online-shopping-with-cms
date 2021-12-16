@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models.base import Model
+from numpy import mod
 
 class CMSUser(models.Model):
     firstName = models.CharField(max_length=30)
@@ -18,6 +20,18 @@ class Product(models.Model):
     off = models.FloatField()
     added_in = models.DateTimeField(auto_now_add=True)
     price = models.FloatField()
+
+    def __repr__(self):
+        return self.name
+
+    def __str__(self):
+        return self.name
+
+class PubFile(models.Model):
+    name = models.CharField(max_length=100)
+    category = models.CharField(max_length=15)
+    file = models.FileField(upload_to="pub files")
+    added_in = models.DateTimeField(auto_now_add=True)
 
     def __repr__(self):
         return self.name
