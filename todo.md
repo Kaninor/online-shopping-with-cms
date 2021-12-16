@@ -9,7 +9,8 @@
 - [x] activating the current tab
 - [x] add, edit and delete
 - [x] able to upload csv files, parsing it into database and append the data into the table
-- [ ] able to upload .pub files and store it into database
+- [x] able to upload .pub files and store it into database
+- [ ] deleting pub file while deleting the record in database
 - [ ] more cookies and sessions
 - [ ] settings view for cms admins
 - [ ] adding an new app to the project for online shopping
