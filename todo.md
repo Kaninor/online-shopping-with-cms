@@ -1,11 +1,12 @@
 - [ ] authentication
+- [ ] giving token to every single admin
 - [ ] displaying charts with data in database
 - [x] filling table with data in database
 - [ ] log in required pages
 - [x] filling cards in dashboard with data
 - [ ] filling charts footer with better text
 - [x] more components
-- [ ] activating the current tab
+- [x] activating the current tab
 - [x] add, edit and delete
 - [x] able to upload csv files, parsing it into database and append the data into the table
 - [ ] able to upload .pub files and store it into database
