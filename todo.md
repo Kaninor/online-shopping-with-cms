@@ -4,15 +4,15 @@
 - [x] filling table with data in database
 - [ ] log in required pages
 - [x] filling cards in dashboard with data
-- [ ] filling charts footer with better text
+- [x] filling charts footer with better text
 - [x] more components
 - [x] activating the current tab
 - [x] add, edit and delete
 - [x] able to upload csv files, parsing it into database and append the data into the table
 - [x] able to upload .pub files and store it into database
-- [ ] deleting pub file while deleting the record in database
+- [x] deleting pub file while deleting the record in database
 - [ ] more cookies and sessions
-- [ ] settings view for cms admins
+- [x] settings view for cms admins
 - [ ] adding an new app to the project for online shopping
 - [ ] connecting the cms to the shop
 - [ ] online payloads(optional)

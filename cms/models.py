@@ -1,6 +1,4 @@
 from django.db import models
-from django.db.models.base import Model
-from numpy import mod
 
 class CMSUser(models.Model):
     firstName = models.CharField(max_length=30)
@@ -32,6 +30,10 @@ class PubFile(models.Model):
     category = models.CharField(max_length=15)
     file = models.FileField(upload_to="pub files")
     added_in = models.DateTimeField(auto_now_add=True)
+
+    def delete(self, using=None, keep_parents=False):
+        self.file.storage.delete(self.file.name)
+        super().delete()
 
     def __repr__(self):
         return self.name

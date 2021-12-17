@@ -3,4 +3,4 @@ from .models import Product, PubFile
 from .adminModels import ProductAdminModel
 
 admin.site.register(Product, ProductAdminModel)
-admin.site.register(PubFile)
+#admin.site.register(PubFile)
