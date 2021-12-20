@@ -36,7 +36,7 @@ def uploadCSV(request):
             raw_csv_file = request.FILES['csvFile']
             csv_file = pd.read_csv(raw_csv_file)
         except Exception as e:
-            return redirect("/")
+            return HttpResponse(e)
         
         if raw_csv_file.name == "append.csv":
             try:
@@ -68,13 +68,16 @@ def uploadPUB(request):
     if request.method == "POST":
         try:
             pub_file = request.FILES['pubFile']
-            p = PubFile(
-                name=pub_file.name,
-                category="test",
-                file=pub_file
-            )
-            p.save()
-            return redirect("/")
+            splited = pub_file.name.split("_")
+            if pub_file.name[-4:len(pub_file.name)] == ".pub":
+                p = PubFile(
+                    name=splited[0],
+                    category=splited[1][0:-4],
+                    file=pub_file
+                )
+                p.save()
+                return redirect("/")
+            return HttpResponse("invalid file! <strong>upload .pub file</strong>")
         except Exception as e:
             return HttpResponse(e)
 
