@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/shop/css/styles.css?{% now 'U' %}">
+    <link rel="stylesheet" href="/static/css/styles.css?{% now 'U' %}">
+    <title>Kaninor Shop</title>
+</head>
+<body class="pt-3 px-2">
+    {% for product in products %}
+        <ul style="list-style-type: none; margin-bottom: 20px;" class="user-select-none">
+            <li>
+                Name :&nbsp;{{ product.name }}
+            </li>
+            <li>
+                Number :&nbsp;{{ product.number }}
+            </li>
+            <li>
+                Off :&nbsp;{{ product.off }}
+            </li>
+            <li>
+                Price :&nbsp;{{ product.price }}
+            </li>
+        </ul>        
+    {% endfor %}
+</body>
+</html>

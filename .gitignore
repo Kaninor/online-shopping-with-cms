@@ -90,3 +90,4 @@ db.sqlite3
 *.csv
 venv/
 pub files/
+*.pub

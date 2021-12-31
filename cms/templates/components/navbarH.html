@@ -9,9 +9,16 @@
         </li>
     </ul>
     <!-- Navbar-->
-    <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4" title="{{ user.email }}">
-        <li class="nav-item dropdown">
-            <span class="nav-link" id="navbarDropdown" href="#" aria-expanded="false"><i class="fas fa-user fa-fw"></i></span>
+    <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <li class="nav-item dropdown inline-ico" title="{{ user.email }}">
+            <span class="nav-link"><i class="fas fa-user fa-fw"></i></span>
+        </li>
+        <li class="nav-item" title="Shop Page">
+            <span class="nav-link">
+                <button class="btn shadow-none shop-btn">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            </span>
         </li>
     </ul>
 </nav>

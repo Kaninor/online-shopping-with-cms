@@ -44,3 +44,19 @@
 .pointer:hover {
     color:rgb(64, 64, 64);
 }
+
+.shop-btn {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-left: -6px;
+    color: rgb(155, 157, 158);
+}
+
+.shop-btn:hover {
+    color: #ddd;
+}
+
+.inline-ico {
+    margin-top: 7px;
+}

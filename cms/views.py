@@ -24,11 +24,6 @@ def tables(request):
         "products": queries.get_products()
     })
 
-def settings(request):
-    return render(request, "settings.html", {
-        "user": queries.get_user(1),
-    })
-
 @csrf_exempt
 def uploadCSV(request):
     if request.method == "POST":

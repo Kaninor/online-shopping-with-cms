@@ -10,5 +10,4 @@ urlpatterns = [
     #path("forgotpassword/", views.forgotPassword, name="forgotPassword"),
     path("upload/csv/", views.uploadCSV, name="uploadCSV"),
     path("upload/pub/", views.uploadPUB, name="uploadPUB"),
-    path("settings/", views.settings, name="settings"),
 ]

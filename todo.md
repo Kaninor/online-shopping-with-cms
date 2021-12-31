@@ -13,7 +13,6 @@
 - [x] deleting pub file while deleting the record in database
 - [x] data validation for uploading .pub files (but not secure!)
 - [ ] more cookies and sessions
-- [x] settings view for cms admins
 - [ ] adding an new app to the project for online shopping
 - [ ] connecting the cms to the shop
 - [ ] online payloads(optional)
